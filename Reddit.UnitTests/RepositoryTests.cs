@@ -22,6 +22,7 @@ public class RepositoryTests
         dbContext.SaveChanges();
         return new PostsRepository(dbContext);
     }
+
     [Fact]
     public async Task GetPosts_ReturnsCorrectPagination()
     {
